@@ -1017,14 +1017,12 @@
 
         combo_sm_lat_ae {
             timeout-ms = <200>;
-            layers = <>;
             key-positions = <15 25>;
             bindings = <&smlat_ae>;
         };
 
         combo_lg_lat_ae {
             timeout-ms = <200>;
-            layers = <>;
             key-positions = <15 25 49>;
             bindings = <&lglat_ae>;
         };
@@ -1654,6 +1652,16 @@
             >;
 
             sensor-bindings = <&rgb_encoder>;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };

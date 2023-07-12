@@ -1017,14 +1017,14 @@
 
         combo_sm_lat_ae {
             timeout-ms = <200>;
-            layers = <3>;
+            layers = <>;
             key-positions = <15 25>;
             bindings = <&smlat_ae>;
         };
 
         combo_lg_lat_ae {
             timeout-ms = <200>;
-            layers = <3>;
+            layers = <>;
             key-positions = <15 25 49>;
             bindings = <&lglat_ae>;
         };
@@ -1650,30 +1650,10 @@
 &trans  &kp GRAVE  &kp TILDE       &td_lt    &td_gt  &kp QMARK                           &kp ASTRK  &kp LBRC  &kp RBRC   &kp HOME   &kp END   &trans
 &schwa   &kp EXCL     &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                           &kp UNDER  &kp LPAR  &kp RPAR   &kp SEMI  &kp PIPE      &cc
 &trans  &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp AMPS   &kp PIPE  &rgb_ug RGB_TOG  &trans  &kp CARET  &kp LBKT  &kp RBKT  &kp COLON  &kp BSLH     &pwr
-                      &trans       &trans    &trans      &mo 3          &pscode  &trans     &trans    &trans    &trans     &trans
+                      &trans       &trans    &trans      &mo 0          &pscode  &trans     &trans    &trans    &trans     &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
-        };
-
-        gaeilge_layer {
-            // TODO: Some binds are waiting for shifted keycode support.
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |  ¡  |  °  |  £   |  ¢   |   ±  |                   |      |       |       |      |       |       |
-            // |       |     |     |  é   |      |      |                   |      |   ú   |   í   |   ó  |       |       |
-            // |       |  á  |  ś  |      |      |      |                   |      |       |       |   ł  |       |       |
-            // |       |  ź  |     |  ć   |      |      |        |  |       |  ń   |       |       |      |   ¿   |       |
-            //               |     |      |      |      |        |  |       |      |       |       |      |
-
-            bindings = <
-&trans  &inv_exc   &degree  &lb_euro  &us_cent  &plus_min                    &trans    &trans   &trans    &trans     &trans  &trans
-&trans    &trans    &trans  &td_sp_e    &trans     &trans                    &trans  &td_sp_u  &fada_i  &td_sp_o     &trans  &trans
-&trans  &td_sp_a  &td_sp_s    &trans    &trans     &trans                    &trans    &trans   &trans   &dark_l     &trans  &trans
-&trans  &td_sp_z    &trans  &acute_c    &trans     &trans  &trans  &trans  &td_sp_n    &trans   &trans    &trans  &inv_ques  &trans
-                    &trans    &trans    &trans     &trans  &trans  &trans    &trans    &trans   &trans    &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };

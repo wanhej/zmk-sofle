@@ -1556,7 +1556,7 @@
         Gaming_Layer {
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &none  &none  &none  &none   &none  &none
-&kp TAB            &kp T         &kp Q         &kp W         &kp E         &kp R                              &none  &none  &none  &none   &none  &none
+&bootloader        &kp T         &kp Q         &kp W         &kp E         &kp R                              &none  &none  &none  &none   &none  &none
 &kp LEFT_ALT       &kp G         &kp A         &kp S         &kp D         &kp F                              &none  &none  &none  &none   &none  &none
 &kp RIGHT_CONTROL  &kp B         &kp Z         &kp X         &kp C         &kp V         &kp C_MUTE  &none    &none  &none  &none  &none   &none  &none
                                  &trans        &trans        &trans        &trans        &kp SPACE   &kp RET  &none  &none  &none  &tog 3

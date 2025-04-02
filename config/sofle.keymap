@@ -1529,7 +1529,9 @@
                    &trans     &trans    &trans    &trans     &pscode          &trans  &trans     &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings =
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         lower_layer {
